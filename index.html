@@ -3,52 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7Zeb NewUI - Home</title>
-    <link rel="stylesheet" href="/newui/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>7Zeb - Home</title>
+    <link rel="icon" type="image/x-icon" href="7zeb.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="topnav">
-        <a href="index.html">Home</a>
-        <a href="/updates.html">Updates</a>
-        <a href="/blog.html">Blog</a>
-        <a href="/videos/about.html">Videos</a>
-        <a href="/me.html">About Me</a>
-        <a href="/settings.html">Settings</a>
+        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;color:var(--section-primary);letter-spacing:0.05em;">7Zeb</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="/updates.html">Updates</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/videos/about.html">Videos</a>
+            <a href="/me.html">About Me</a>
+            <a href="/settings.html">Settings</a>
+            <a href="https://betavault.github.io">BetaVault</a>
+            <a href="/more.html">More</a>
+            <button id="dark-toggle-btn" aria-label="Toggle dark mode" style="background:none;border:none;cursor:pointer;font-size:1.4em;vertical-align:middle;outline:none;">
+                <!-- Icon will be inserted by dark.js -->
+                <span id="dark-toggle-icon">🌙</span>
+            </button>
+        </div>
     </nav>
 
-    <!-- The amazing part -->
+   <section id="before">
+   <h1>Before you continue</h1>
+   <p>This is a template fore NewUI, and may NOT be what you see on Rutwik Projects</p>
+   <p>The 7Zeb Website is currently on: NewUI 2.3.4</p>
+   <p>This is: NewUI 3.2.0</p>
+   <p>Go to the <a href="https://7zeb.github.io"><button>7Zeb Website</button></a></p>    
+
+   </section>    
+    <!-- Hero / Welcome Section -->
     <section id="home">
-        <h1>Hi before you continue, I want you to know some stuff</h1>
-        <p>This is a test of 7Zeb's NewUI, currently it's a templete.</p>
-        <p>This is NOT final</p>
-        <br>
         <h1>Welcome to 7Zeb's Website</h1>
-        <p>The official 7Zeb website.</p>
-        <button>Learn More About 7Zeb</button>
+        <p>
+          The official 7Zeb website.
+        </p>
     </section>
 
-    <!-- About Section -->
+    <!-- YouTube Section -->
     <section id="youtube">
         <h2>Newest Video</h2>
-        <p>This feature is coming soon, im testing right now.</p>
+        <p>This feature doesn't work since this is a template.</p>
+        <div style="border-radius:14px;overflow:hidden;max-width:100%;margin:0 auto 1em auto;box-shadow:0 4px 32px #34b3f122;">
+        </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Recent Updates Section -->
     <section id="recentupdates">
-        <h2>Recent Updates</h2>
-        <ul>
-            <li>7Zeb new website testing</li>
-            <li>now i can add some cool things</li>
-            <li>my CSS is working now!</li>
-        </ul>
+        <h2>This shows the recent updates!</h2>
     </section>
-
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Rutwik Stuff Branding Umbrella | This website is <a href="https://www.github.io/7zeb/newui">open-source</a></p>
+        <p>© 2025 Rutwik Stuff Branding Umbrella | This website is <a href="https://www.github.io/7zeb/website">open-source</a></p>
     </footer>
+    <script src="dark.js"></script>
 </body>
 </html>

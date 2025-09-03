@@ -159,6 +159,7 @@ section {
 
 /* Remove fixed positioning from .infobox, infobox will now float depending on size of window */
 .infobox {
+  padding: 1.5rem 1.5rem 1.5rem 1.8rem; /* Fix a text issue that makes the infobox look cursed */
   position: static;
   margin-bottom: 2rem;
   width: auto;

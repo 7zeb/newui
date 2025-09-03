@@ -16,39 +16,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
   }
-  // Initial load
   const savedMode = localStorage.getItem('theme');
   setMode(savedMode === 'dark' || (!savedMode && prefersDark));
-  // Toggle
   modeToggle.addEventListener('click', () => {
     setMode(!body.classList.contains('dark-mode'));
   });
-});
 
-// TEXT CAROUSEL
-document.addEventListener('DOMContentLoaded', () => {
-  const messages = [
-    "Welcome to the blue-green glassy site!",
-    "Try toggling light/dark mode in the navbar.",
-    "Hover over cards to see them pop out.",
-    "Responsive design for every device.",
-    "Check out the infobox on the right!"
-  ];
+  // Text carousel (HTML-editable)
+  const carousel = document.querySelector('.text-carousel');
+  const contentElem = carousel.querySelector('.carousel-content');
+  const items = Array.from(contentElem.querySelectorAll('span'));
+  const prevBtn = carousel.querySelector('.carousel-button.prev');
+  const nextBtn = carousel.querySelector('.carousel-button.next');
   let index = 0;
-  const contentElem = document.querySelector('.text-carousel .carousel-content');
-  const prevBtn = document.querySelector('.text-carousel .carousel-button.prev');
-  const nextBtn = document.querySelector('.text-carousel .carousel-button.next');
-  
-  function showMessage(i) {
-    contentElem.textContent = messages[i];
+  function showCarousel(i) {
+    items.forEach((item, idx) => {
+      item.style.display = idx === i ? 'inline' : 'none';
+    });
   }
-  showMessage(index);
+  showCarousel(index);
   prevBtn.addEventListener('click', () => {
-    index = (index - 1 + messages.length) % messages.length;
-    showMessage(index);
+    index = (index - 1 + items.length) % items.length;
+    showCarousel(index);
   });
   nextBtn.addEventListener('click', () => {
-    index = (index + 1) % messages.length;
-    showMessage(index);
+    index = (index + 1) % items.length;
+    showCarousel(index);
   });
 });

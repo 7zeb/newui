@@ -1,10 +1,11 @@
 NewUI Exceptions List
 
-This list shows the websites allowed to use NewUI 3.
+This list shows the websites allowed to use NewUI 3. This includes ALL PATHS OF THE WEBSITE.
 
-7Zeb Website (https://7zeb.github.io) and ALL paths (example: https://7zeb.github.io/exploring)
+7Zeb Website (https://7zeb.github.io)
 Mocodonia Website (https://mocodonia.github.io)
 BetaCity (https://BetaCity.github.io)
+Old 7Zeb Website (https://7zeb.neocities.org)
 
 These sites are allowed to use NewUI3, but that doesn't mean they will.
 

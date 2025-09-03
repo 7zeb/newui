@@ -4,66 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewUI - Home</title>
-    <link rel="icon" type="image/x-icon" href="7zeb.png">
-    <link rel="stylesheet" href="/newui/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="logos/logo8.png">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="topnav">
-        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;color:var(--section-primary);letter-spacing:0.05em;">NewUI</div>
+    <nav class="navbar glass">
+        <div class="nav-logo" style="font-size:1.5em;font-weight:bold;letter-spacing:0.05em;">NewUI - Home</div>
         <div class="nav-links">
-            <a href="index.html" class="active">Home</a>
+            <a href="/newui/index.html" class="active">Home</a>
             <a href="/newui/about.html">About</a>
             <a href="/newui/preview.html">Preview</a>
-            <a href="/newui/releases">Releases</a>
-            <a href="https://betavault.github.io">BetaVault</a>
-            <button id="dark-toggle-btn" aria-label="Toggle dark mode" style="background:none;border:none;cursor:pointer;font-size:1.4em;vertical-align:middle;outline:none;">
-                <!-- Icon will be inserted by dark.js -->
-                <span id="dark-toggle-icon">🌙</span>
-            </button>
+            <a href="/newui/releases.html">Releases</a>
+            <a href="https://BetaCity.github.io">BetaCity</a>
+            <button class="mode-toggle" aria-label="Toggle dark mode">🌙</button>
         </div>
     </nav>
 
-    <!-- Hero / Welcome Section -->
-    <section id="home">
-        <h1>NewUI</h1>
-        <p>
-          The official CSS for the 7Zeb Website and 7Zeb Projects
-        </p>
+    <!-- Main Content with Infobox -->
+    <main>
+        <div class="main-flex">
+            <!-- Main Sections -->
+            <div style="flex:2 1 0; min-width:0;">
+                <section class="glass" id="home">
+                    <h1>Welcome to 7Zeb's Website</h1>
+                    <p>The official 7Zeb website 
+                        <a href="/me.html" class="button">Learn More About 7Zeb</a>
+                    </p>
+                    <h1>THIS IS JUST A PREVIEW!</h1>
+                    <p>"The Saga Never Stops!" - said by 7Zeb (every day since June 15, 2025)</p>
+                </section>
 
-        <h1>Important Annoucment!!!!</h1>
-        <p>NewUI 4 Development starts today!!! That's right!</p>
-    </section>
+                <section class="glass" id="youtube">
+                    <h2>Newest Video</h2>
+                    <p>7Zeb's Newest Video is: Clipchamp is getting much worse</p>
+                    <h3>Watch it now!</h3>
+                    <iframe width="100%" height="383" src="https://www.youtube.com/embed/bC_A1rpbOsA" title="Clipchamp is getting much worse" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Currently 630 Subscribers (+1 Since Last Update)</p>
+                    <p>Go to 7Zeb's Channel <a href="https://youtube.com/@7zeb" class="button">Here</a></p>
+                </section>
 
-    <!-- YouTube Section -->
-    <section id="learn-more">
-        <h2>What is NewUI</h2>
-        <p>NewUI is the CSS framework for the 7Zeb Website and other 7Zeb Projects</p>
-    </section>
+                <section class="glass" id="recentupdates">
+                    <h2>Latest Update</h2>
+                    <p>This is the latest update from 7Zeb</p>
+                    <h3>August 28, 2025 7:31 AM CDT</h3>
+                    <p>Alright, this week will be a busy week for 7Zeb viewers, I'm dropping a video on Friday, Saturday, Sunday, and GET THIS EVEN MONDAY!!!
+                    That's right, the 7Zeb Labor Day Special is happening, in fact I'm doing a dedicated blog post about all the events happening in this
+                    week, so make sure you go check that out in the blogs section.</p>
+                </section>
 
-    <!-- Recent Updates Section -->
-    <section id="recentupdates">
-        <h2>This shows the recent releases for NewUI</h2>
-        <br>
-        <h3>NewUI 4: 4.0.0 (Pre-Release, Released on: September 3, 2025)</h3>
-        <h3>NewUI 3: 3.2.2 (Released on: August 28, 2025)</h3>
-        <h3>NewUI 2: 2.3.6 (Released on: May 22, 2025)</h3>
-        <h3>LegacyUI: 1.0.5 (Released on: January 12, 2025)</h3>
-        <br>
-        <p>Want to learn more? <a href="/newui/releases.html"><button>Click Here</button></p>
-    </section>
+                <section class="glass" id="win10upgradesaga"> 
+                    <h2>Windows 10 Upgrade Saga News</h2>
+                    <p>The Windows Upgrade Saga has been completed!</p>
+                    <a href="/windows/10/upgradesaga.html" class="button">Go to full page</a>
+                </section>
 
-    <section id="preview-newui3">
-        <h1>Preview NewUI 3</h1>
-        <p>You can preview NewUI 3 with the template.</p>
-        <a href="/newui/preview.html"><button>Preview Now</button></a>
-    </section>     
+                <section class="glass" id="download-source-code">
+                    <h2>This site is open source... Well Mostly</h2>
+                    <p>That means anyone can download the code I used to make it.</p>
+                    <p>Want to download my source code? Well I made an easy way to do it.</p>
+                    <p>Go to the 7Zeb Download Center <a href="/downloads/index.html" class="button">Go Now!</a> and download my source code today.</p>
+                    <h3 style="color:red">AFTER YOU DOWNLOAD</h3>
+                    <p>After you have downloaded the source code, delete any CSS file that you are not allowed to use (if you are publishing this site)
+                    for more information, read the <a href="/tos.html">TOS</a></p>    
+                </section>
+            </div>
+            <!-- Infobox -->
+            <aside class="infobox glass">
+                <h3>Infobox</h3>
+                <p style="margin-left:0.5em;">This is a floating infobox. You can put any important info, notifications, or tips here.</p>
+                <ul style="margin-left:1em;">
+                    <li>Blue-green glassy look</li>
+                    <li>Responsive design</li>
+                    <li>Dark/Light mode</li>
+                </ul>
+            </aside>
+        </div>
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <p>© 2025 Rutwik Stuff Branding Umbrella | This website is <a href="https://www.github.io/7zeb/newui">open-source</a></p>
+    <footer class="footer glass">
+        <p>© 2025 Rutwik Stuff Branding Umbrella | This website is <a href="https://www.github.io/7zeb/website">open-source*</a></p>
+        <p>Last modified on: September 3, 2025</p>
     </footer>
-    <script src="/newui/dark.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

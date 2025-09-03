@@ -124,16 +124,46 @@ section {
   box-sizing: border-box;
 }
 
-/* Infobox floating on the right */
-.infobox {
-  position: fixed;
-  top: calc(var(--navbar-height) + 2rem);
-  right: 2rem;
-  width: var(--infobox-width);
-  z-index: 900;
-  padding: 1.5rem;
-  color: var(--text-dark);
+.main-flex {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  max-width: 1100px;
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  box-sizing: border-box;
 }
+.main-flex section {
+  flex: 2 1 0;
+  min-width: 0;
+}
+.main-flex .infobox {
+  flex: 1 1 320px;
+  min-width: 250px;
+  max-width: 350px;
+  margin-top: 0;
+  position: static;
+}
+
+@media (max-width: 1000px) {
+  .main-flex {
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 98vw;
+  }
+  .main-flex .infobox {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* Remove fixed positioning from .infobox, infobox will now float depending on size of window */
+.infobox {
+  position: static;
+  margin-bottom: 2rem;
+  width: auto;
+}
+
 .glass.infobox {
   box-shadow: 0 8px 32px rgba(18,58,89,0.12), 0 2px 8px rgba(18,58,89,0.07);
   border-radius: 20px;

@@ -6,6 +6,7 @@ This list shows the websites allowed to use NewUI 4. This includes ALL PATHS OF 
 Mocodonia Website (https://mocodonia.github.io)
 BetaCity (https://BetaCity.github.io)
 Old 7Zeb Website (https://7zeb.neocities.org)
+Rutwik Video Editor/RVE (https://rutwik-stuff.github.io/rve)
 
 These sites are allowed to use NewUI3, but that doesn't mean they will.
 

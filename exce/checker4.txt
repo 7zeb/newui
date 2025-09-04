@@ -1,5 +1,6 @@
 NewUI Exceptions List
 
+THIS IS FOR VERSIONS BEFORE v4.1.3, ON VERSIONS GREATER THAN THAT, NEWUI IS OPEN-SOURCE
 This list shows the websites allowed to use NewUI 4. This includes ALL PATHS OF THE WEBSITE.
 
 7Zeb Website (https://7zeb.github.io)

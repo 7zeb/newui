@@ -3,7 +3,7 @@
 /* Import Segoe UI */
 @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
 
-/* Root variables for easy theming */
+/* Root variables for easy theming*/
 :root {
   --primary-gradient: linear-gradient(135deg, #2fd6e8 0%, #2494c1 60%, #37e6c4 100%);
   --glass-bg: rgba(255,255,255,0.25);

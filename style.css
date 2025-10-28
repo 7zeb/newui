@@ -431,5 +431,19 @@ body:dark-mode .dropdown-menu a:hover {
   background: var(--button-bg);
 }
 
+.code-block {
+  background: rgba(0,0,0,0.05);
+  border-radius: 10px;
+  padding: 1em;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95em;
+  overflow-x: auto;
+  color: var(--text-light);
+}
+body.dark-mode .code-block {
+  background: rgba(255,255,255,0.05);
+  color: var(--text-light);
+}
+
 
 /* Extensions go here */

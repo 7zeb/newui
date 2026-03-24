@@ -46,7 +46,7 @@
   --radius-sm: 10px;
 }
 
-/* Optional: Dark mode tweaks (Aero still “dark glass”) */
+/* Dark mode stuff */
 body.dark-mode {
   --glass-bg: rgba(10, 18, 30, 0.30);
   --glass-border: rgba(255, 255, 255, 0.16);

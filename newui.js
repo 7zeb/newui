@@ -1,5 +1,5 @@
-//NewUI 4 JavaScript file
-//This is REQUIRED for NewUI 4 to work proporly
+//NewUI 5 JavaScript file
+//This is REQUIRED for NewUI 5 to work proporly
 
 // DARK MODE TOGGLE
 document.addEventListener('DOMContentLoaded', () => {
